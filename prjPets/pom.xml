@@ -1,0 +1,742 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.mycompany.gerenciaBanco</groupId>
+    <artifactId>prjPets</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+    <dependencies>
+        <dependency>
+    <groupId>com.mysql</groupId>
+    <artifactId>mysql-connector-j</artifactId>
+    <version>8.4.0</version>
+</dependency>
+<dependency>
+    <groupId>com.apache.ant</groupId>
+    <artifactId>ant</artifactId>
+    <version>1.7.1</version>
+    <scope>system</scope>
+    <systemPath>C:\Users\ANDRESSA\Documents\ireport\iReport-4.0.1\ireport\modules\ext\ant-1.7.1.jar</systemPath>
+</dependency>
+<dependency>
+    <groupId>antlr</groupId>
+    <artifactId>antlr</artifactId>
+    <version>2.7.6</version>
+</dependency>
+<dependency>
+    <groupId>asm</groupId>
+    <artifactId>asm</artifactId>
+    <version>1.0</version>
+    <scope>system</scope>
+    <systemPath>C:\Users\ANDRESSA\Documents\ireport\iReport-4.0.1\ireport\modules\ext\asm.jar</systemPath>
+</dependency>
+<dependency>
+    <groupId>org.ow2.asm</groupId>
+    <artifactId>asm-attrs</artifactId>
+    <version>9.0</version> <!-- Ajuste a versão conforme necessário -->
+    <scope>system</scope>
+    <systemPath>C:\Users\ANDRESSA\Documents\ireport\iReport-4.0.1\ireport\modules\ext\asm-attrs.jar</systemPath>
+</dependency>
+
+<dependency>
+    <groupId>net.sourceforge.barbecue</groupId>
+    <artifactId>barbecue</artifactId>
+    <version>1.5-beta1</version>
+    <scope>system</scope>
+    <systemPath>C:\Users\ANDRESSA\Documents\ireport\iReport-4.0.1\ireport\modules\ext\barbecue-1.5-beta1.jar</systemPath>
+</dependency>
+
+<dependency>
+    <groupId>org.barcode4j</groupId>
+    <artifactId>barcode4j</artifactId>
+    <version>2.0</version>
+    <scope>system</scope>
+    <systemPath>C:\Users\ANDRESSA\Documents\ireport\iReport-4.0.1\ireport\modules\ext\barcode4j-2.0.jar</systemPath>
+</dependency>
+
+<dependency>
+    <groupId>org.apache.xmlgraphics</groupId>
+    <artifactId>batik-anim</artifactId>
+    <version>1.7</version>
+    <scope>system</scope>
+    <systemPath>C:\Users\ANDRESSA\Documents\ireport\iReport-4.0.1\ireport\modules\ext\batik-anim.jar</systemPath>
+</dependency>
+
+<dependency>
+    <groupId>org.apache.xmlgraphics</groupId>
+    <artifactId>batik-awt-util</artifactId>
+    <version>1.7</version>
+    <scope>system</scope>
+    <systemPath>C:\Users\ANDRESSA\Documents\ireport\iReport-4.0.1\ireport\modules\ext\batik-awt-util.jar</systemPath>
+</dependency>
+
+<dependency>
+    <groupId>org.apache.xmlgraphics</groupId>
+    <artifactId>batik-bridge</artifactId>
+    <version>1.7</version>
+    <scope>system</scope>
+    <systemPath>C:\Users\ANDRESSA\Documents\ireport\iReport-4.0.1\ireport\modules\ext\batik-bridge.jar</systemPath>
+</dependency>
+
+<dependency>
+    <groupId>org.apache.xmlgraphics</groupId>
+    <artifactId>batik-css</artifactId>
+    <version>1.7</version>
+    <scope>system</scope>
+    <systemPath>C:\Users\ANDRESSA\Documents\ireport\iReport-4.0.1\ireport\modules\ext\batik-css.jar</systemPath>
+</dependency>
+
+<dependency>
+    <groupId>org.apache.xmlgraphics</groupId>
+    <artifactId>batik-dom</artifactId>
+    <version>1.7</version>
+    <scope>system</scope>
+    <systemPath>C:\Users\ANDRESSA\Documents\ireport\iReport-4.0.1\ireport\modules\ext\batik-dom.jar</systemPath>
+</dependency>
+
+<dependency>
+    <groupId>org.apache.xmlgraphics</groupId>
+    <artifactId>batik-ext</artifactId>
+    <version>1.7</version>
+    <scope>system</scope>
+    <systemPath>C:\Users\ANDRESSA\Documents\ireport\iReport-4.0.1\ireport\modules\ext\batik-ext.jar</systemPath>
+</dependency>
+
+<dependency>
+    <groupId>org.apache.xmlgraphics</groupId>
+    <artifactId>batik-gvt</artifactId>
+    <version>1.7</version>
+    <scope>system</scope>
+    <systemPath>C:\Users\ANDRESSA\Documents\ireport\iReport-4.0.1\ireport\modules\ext\batik-gvt.jar</systemPath>
+</dependency>
+
+<dependency>
+    <groupId>org.apache.xmlgraphics</groupId>
+    <artifactId>batik-svg-dom</artifactId>
+    <version>1.7</version>
+    <scope>system</scope>
+    <systemPath>C:\Users\ANDRESSA\Documents\ireport\iReport-4.0.1\ireport\modules\ext\batik-svg-dom.jar</systemPath>
+</dependency>
+
+<dependency>
+    <groupId>org.apache.xmlgraphics</groupId>
+    <artifactId>batik-svggen</artifactId>
+    <version>1.7</version>
+    <scope>system</scope>
+    <systemPath>C:\Users\ANDRESSA\Documents\ireport\iReport-4.0.1\ireport\modules\ext\batik-svggen.jar</systemPath>
+</dependency>
+
+<dependency>
+    <groupId>org.apache.xmlgraphics</groupId>
+    <artifactId>batik-util</artifactId>
+    <version>1.7</version>
+    <scope>system</scope>
+    <systemPath>C:\Users\ANDRESSA\Documents\ireport\iReport-4.0.1\ireport\modules\ext\batik-util.jar</systemPath>
+</dependency>
+
+<dependency>
+    <groupId>org.apache.xmlgraphics</groupId>
+    <artifactId>batik-xml</artifactId>
+    <version>1.7</version>
+    <scope>system</scope>
+    <systemPath>C:\Users\ANDRESSA\Documents\ireport\iReport-4.0.1\ireport\modules\ext\batik-xml.jar</systemPath>
+</dependency>
+
+<dependency>
+    <groupId>org.apache.bcel</groupId>
+    <artifactId>bcel</artifactId>
+    <version>5.2</version>
+    <scope>system</scope>
+    <systemPath>C:\Users\ANDRESSA\Documents\ireport\iReport-4.0.1\ireport\modules\ext\bcel-5.2.jar</systemPath>
+</dependency>
+
+<dependency>
+    <groupId>org.beanshell</groupId>
+    <artifactId>bsh</artifactId>
+    <version>2.0b4</version>
+    <scope>system</scope>
+    <systemPath>C:\Users\ANDRESSA\Documents\ireport\iReport-4.0.1\ireport\modules\ext\bsh-2.0b4.jar</systemPath>
+</dependency>
+
+<dependency>
+    <groupId>org.castor</groupId>
+    <artifactId>castor</artifactId>
+    <version>1.2</version>
+    <scope>system</scope>
+    <systemPath>C:\Users\ANDRESSA\Documents\ireport\iReport-4.0.1\ireport\modules\ext\castor-1.2.jar</systemPath>
+</dependency>
+
+<dependency>
+    <groupId>cglib</groupId>
+    <artifactId>cglib</artifactId>
+    <version>2.1</version>
+    <scope>system</scope>
+    <systemPath>C:\Users\ANDRESSA\Documents\ireport\iReport-4.0.1\ireport\modules\ext\cglib-2.1.jar</systemPath>
+</dependency>
+
+<dependency>
+    <groupId>com.cincom</groupId>
+    <artifactId>cincom-jr-xmla</artifactId>
+    <version>1.0</version>
+    <scope>system</scope>
+    <systemPath>C:\Users\ANDRESSA\Documents\ireport\iReport-4.0.1\ireport\modules\ext\cincom-jr-xmla.jar</systemPath>
+</dependency>
+
+
+<dependency>
+    <groupId>commons-codec</groupId>
+    <artifactId>commons-codec</artifactId>
+    <version>1.7</version>
+    <scope>system</scope>
+    <systemPath>C:\Users\ANDRESSA\Documents\ireport\iReport-4.0.1\ireport\modules\ext\commons-codec-1.7.jar</systemPath>
+</dependency>
+
+<dependency>
+    <groupId>commons-dbcp</groupId>
+    <artifactId>commons-dbcp</artifactId>
+    <version>1.2.2</version>
+    <scope>system</scope>
+    <systemPath>C:\Users\ANDRESSA\Documents\ireport\iReport-4.0.1\ireport\modules\ext\commons-dbcp-1.2.2.jar</systemPath>
+</dependency>
+
+<dependency>
+    <groupId>commons-javaflow</groupId>
+    <artifactId>commons-javaflow</artifactId>
+    <version>20060411</version>
+    <scope>system</scope>
+    <systemPath>C:\Users\ANDRESSA\Documents\ireport\iReport-4.0.1\ireport\modules\ext\commons-javaflow-20060411.jar</systemPath>
+</dependency>
+
+<dependency>
+    <groupId>commons-math</groupId>
+    <artifactId>commons-math</artifactId>
+    <version>1.0</version>
+    <scope>system</scope>
+    <systemPath>C:\Users\ANDRESSA\Documents\ireport\iReport-4.0.1\ireport\modules\ext\commons-math-1.0.jar</systemPath>
+</dependency>
+
+<dependency>
+    <groupId>commons-pool</groupId>
+    <artifactId>commons-pool</artifactId>
+    <version>1.3</version>
+    <scope>system</scope>
+    <systemPath>C:\Users\ANDRESSA\Documents\ireport\iReport-4.0.1\ireport\modules\ext\commons-pool-1.3.jar</systemPath>
+</dependency>
+
+<dependency>
+    <groupId>commons-vfs</groupId>
+    <artifactId>commons-vfs</artifactId>
+    <version>1.0</version>
+    <scope>system</scope>
+    <systemPath>C:\Users\ANDRESSA\Documents\ireport\iReport-4.0.1\ireport\modules\ext\commons-vfs-1.0.jar</systemPath>
+</dependency>
+<dependency>
+    <groupId>dom4j</groupId>
+    <artifactId>dom4j</artifactId>
+    <version>1.6</version>
+    <scope>system</scope>
+    <systemPath>C:\Users\ANDRESSA\Documents\ireport\iReport-4.0.1\ireport\modules\ext\dom4j-1.6.jar</systemPath>
+</dependency>
+
+<dependency>
+    <groupId>net.sf.ehcache</groupId>
+    <artifactId>ehcache</artifactId>
+    <version>1.1</version>
+    <scope>system</scope>
+    <systemPath>C:\Users\ANDRESSA\Documents\ireport\iReport-4.0.1\ireport\modules\ext\ehcache-1.1.jar</systemPath>
+</dependency>
+
+<dependency>
+    <groupId>org.eigenbase</groupId>
+    <artifactId>eigenbase-properties</artifactId>
+    <version>1.1.0.10924</version>
+    <scope>system</scope>
+    <systemPath>C:\Users\ANDRESSA\Documents\ireport\iReport-4.0.1\ireport\modules\ext\eigenbase-properties-1.1.0.10924.jar</systemPath>
+</dependency>
+
+<dependency>
+    <groupId>org.eigenbase</groupId>
+    <artifactId>eigenbase-resgen</artifactId>
+    <version>1.3.0.11873</version>
+    <scope>system</scope>
+    <systemPath>C:\Users\ANDRESSA\Documents\ireport\iReport-4.0.1\ireport\modules\ext\eigenbase-resgen-1.3.0.11873.jar</systemPath>
+</dependency>
+
+<dependency>
+    <groupId>org.eigenbase</groupId>
+    <artifactId>eigenbase-xom</artifactId>
+    <version>1.3.0.11999</version>
+    <scope>system</scope>
+    <systemPath>C:\Users\ANDRESSA\Documents\ireport\iReport-4.0.1\ireport\modules\ext\eigenbase-xom-1.3.0.11999.jar</systemPath>
+</dependency>
+
+<dependency>
+    <groupId>org.jboss.ejb3</groupId>
+    <artifactId>ejb3-persistence</artifactId>
+    <version>1.0</version>
+    <scope>system</scope>
+    <systemPath>C:\Users\ANDRESSA\Documents\ireport\iReport-4.0.1\ireport\modules\ext\ejb3-persistence.jar</systemPath>
+</dependency>
+
+<dependency>
+    <groupId>org.codehaus.groovy</groupId>
+    <artifactId>groovy-all</artifactId>
+    <version>1.7.5</version>
+    <scope>system</scope>
+    <systemPath>C:\Users\ANDRESSA\Documents\ireport\iReport-4.0.1\ireport\modules\ext\groovy-all-1.7.5.jar</systemPath>
+</dependency>
+
+<dependency>
+    <groupId>org.hibernate</groupId>
+    <artifactId>hibernate3</artifactId>
+    <version>3.2.5-SP1</version>
+    <scope>system</scope>
+    <systemPath>C:\Users\ANDRESSA\Documents\ireport\iReport-4.0.1\ireport\modules\ext\hibernate3.jar</systemPath>
+</dependency>
+
+<dependency>
+    <groupId>org.hibernate</groupId>
+    <artifactId>hibernate-annotations</artifactId>
+    <version>3.5.6-Final</version>
+    <scope>system</scope>
+    <systemPath>C:\Users\ANDRESSA\Documents\ireport\iReport-4.0.1\ireport\modules\ext\hibernate-annotations.jar</systemPath>
+</dependency>
+
+<dependency>
+    <groupId>org.hibernate</groupId>
+    <artifactId>hibernate-commons-annotations</artifactId>
+    <version>3.2.0.GA</version>
+    <scope>system</scope>
+    <systemPath>C:\Users\ANDRESSA\Documents\ireport\iReport-4.0.1\ireport\modules\ext\hibernate-commons-annotations.jar</systemPath>
+</dependency>
+
+<dependency>
+    <groupId>org.hsqldb</groupId>
+    <artifactId>hsqldb</artifactId>
+    <version>1.8.0.10</version>
+    <scope>system</scope>
+    <systemPath>C:\Users\ANDRESSA\Documents\ireport\iReport-4.0.1\ireport\modules\ext\hsqldb-1.8.0-10.jar</systemPath>
+</dependency>
+
+<dependency>
+    <groupId>jakarta</groupId>
+    <artifactId>bcel</artifactId>
+    <version>20050813</version>
+    <scope>system</scope>
+    <systemPath>C:\Users\ANDRESSA\Documents\ireport\iReport-4.0.1\ireport\modules\ext\jakarta-bcel-20050813.jar</systemPath>
+</dependency>
+
+<!--
+<dependency>
+    <groupId>net.sf.jasperreports</groupId>
+    <artifactId>jasperreports</artifactId>
+    <version>4.0.1</version>
+    <scope>system</scope>
+    <systemPath>C:\Users\ANDRESSA\Documents\ireport\iReport-4.0.1\ireport\modules\ext\jasperreports-4.0.1.jar</systemPath>
+</dependency>
+
+<dependency>
+    <groupId>net.sf.jasperreports</groupId>
+    <artifactId>jasperreports-chart-themes</artifactId>
+    <version>4.0.1</version>
+    <scope>system</scope>
+    <systemPath>C:\Users\ANDRESSA\Documents\ireport\iReport-4.0.1\ireport\modules\ext\jasperreports-chart-themes-4.0.1.jar</systemPath>
+</dependency>
+
+<dependency>
+    <groupId>net.sf.jasperreports</groupId>
+    <artifactId>jasperreports-extensions</artifactId>
+    <version>3.5.3</version>
+    <scope>system</scope>
+    <systemPath>C:\Users\ANDRESSA\Documents\ireport\iReport-4.0.1\ireport\modules\ext\jasperreports-extensions-3.5.3.jar</systemPath>
+</dependency>
+
+<dependency>
+    <groupId>net.sf.jasperreports</groupId>
+    <artifactId>jasperreports-fonts</artifactId>
+    <version>4.0.1</version>
+    <scope>system</scope>
+    <systemPath>C:\Users\ANDRESSA\Documents\ireport\iReport-4.0.1\ireport\modules\ext\jasperreports-fonts-4.0.1.jar</systemPath>
+</dependency>
+-->
+
+<dependency>
+    <groupId>javacc</groupId>
+    <artifactId>javacup</artifactId>
+    <version>0.10</version>
+    <scope>system</scope>
+    <systemPath>C:\Users\ANDRESSA\Documents\ireport\iReport-4.0.1\ireport\modules\ext\javacup.jar</systemPath>
+</dependency>
+
+<dependency>
+    <groupId>javassist</groupId>
+    <artifactId>javassist</artifactId>
+    <version>3.4.GA</version>
+    <scope>system</scope>
+    <systemPath>C:\Users\ANDRESSA\Documents\ireport\iReport-4.0.1\ireport\modules\ext\javassist-3.4.GA.jar</systemPath>
+</dependency>
+
+<dependency>
+    <groupId>jaxen</groupId>
+    <artifactId>jaxen</artifactId>
+    <version>1.1.1</version>
+    <scope>system</scope>
+    <systemPath>C:\Users\ANDRESSA\Documents\ireport\iReport-4.0.1\ireport\modules\ext\jaxen-1.1.1.jar</systemPath>
+</dependency>
+
+<dependency>
+    <groupId>org.jfree</groupId>
+    <artifactId>jcommon</artifactId>
+    <version>1.0.15</version>
+    <scope>system</scope>
+    <systemPath>C:\Users\ANDRESSA\Documents\ireport\iReport-4.0.1\ireport\modules\ext\jcommon-1.0.15.jar</systemPath>
+</dependency>
+
+<dependency>
+    <groupId>org.jdom</groupId>
+    <artifactId>jdom</artifactId>
+    <version>1.1</version>
+    <scope>system</scope>
+    <systemPath>C:\Users\ANDRESSA\Documents\ireport\iReport-4.0.1\ireport\modules\ext\jdom.jar</systemPath>
+</dependency>
+
+<dependency>
+    <groupId>org.eclipse.jdt</groupId>
+    <artifactId>jdt-compiler</artifactId>
+    <version>3.1.1</version>
+    <scope>system</scope>
+    <systemPath>C:\Users\ANDRESSA\Documents\ireport\iReport-4.0.1\ireport\modules\ext\jdt-compiler-3.1.1.jar</systemPath>
+</dependency>
+
+<dependency>
+    <groupId>org.jfree</groupId>
+    <artifactId>jfreechart</artifactId>
+    <version>1.0.12</version>
+    <scope>system</scope>
+    <systemPath>C:\Users\ANDRESSA\Documents\ireport\iReport-4.0.1\ireport\modules\ext\jfreechart-1.0.12.jar</systemPath>
+</dependency>
+
+<dependency>
+    <groupId>javax.persistence</groupId>
+    <artifactId>jpa</artifactId>
+    <version>1.0</version>
+    <scope>system</scope>
+    <systemPath>C:\Users\ANDRESSA\Documents\ireport\iReport-4.0.1\ireport\modules\ext\jpa.jar</systemPath>
+</dependency>
+
+<dependency>
+    <groupId>javax.activation</groupId>
+    <artifactId>js_activation</artifactId>
+    <version>1.1</version>
+    <scope>system</scope>
+    <systemPath>C:\Users\ANDRESSA\Documents\ireport\iReport-4.0.1\ireport\modules\ext\js_activation-1.1.jar</systemPath>
+</dependency>
+
+<dependency>
+    <groupId>javax.xml</groupId>
+    <artifactId>js_axis</artifactId>
+    <version>1.4</version>
+    <scope>system</scope>
+    <systemPath>C:\Users\ANDRESSA\Documents\ireport\iReport-4.0.1\ireport\modules\ext\js_axis-1.4patched.jar</systemPath>
+</dependency>
+
+<dependency>
+    <groupId>commons-codec</groupId>
+    <artifactId>js_commons-codec</artifactId>
+    <version>1.3</version>
+    <scope>system</scope>
+    <systemPath>C:\Users\ANDRESSA\Documents\ireport\iReport-4.0.1\ireport\modules\ext\js_commons-codec-1.3.jar</systemPath>
+</dependency>
+
+<dependency>
+    <groupId>commons-discovery</groupId>
+    <artifactId>js_commons-discovery</artifactId>
+    <version>0.2</version>
+    <scope>system</scope>
+    <systemPath>C:\Users\ANDRESSA\Documents\ireport\iReport-4.0.1\ireport\modules\ext\js_commons-discovery-0.2.jar</systemPath>
+</dependency>
+
+<dependency>
+    <groupId>commons-httpclient</groupId>
+    <artifactId>js_commons-httpclient</artifactId>
+    <version>3.1</version>
+    <scope>system</scope>
+    <systemPath>C:\Users\ANDRESSA\Documents\ireport\iReport-4.0.1\ireport\modules\ext\js_commons-httpclient-3.1.jar</systemPath>
+</dependency>
+
+<dependency>
+    <groupId>org.jasperserver</groupId>
+    <artifactId>js_jasperserver-common-ws</artifactId>
+    <version>3.5.0</version>
+    <scope>system</scope>
+    <systemPath>C:\Users\ANDRESSA\Documents\ireport\iReport-4.0.1\ireport\modules\ext\js_jasperserver-common-ws-3.5.0.jar</systemPath>
+</dependency>
+
+<dependency>
+    <groupId>javax.xml.rpc</groupId>
+    <artifactId>js_jaxrpc</artifactId>
+    <version>1.2</version>
+    <scope>system</scope>
+    <systemPath>C:\Users\ANDRESSA\Documents\ireport\iReport-4.0.1\ireport\modules\ext\js_jaxrpc.jar</systemPath>
+</dependency>
+
+<dependency>
+    <groupId>javax.mail</groupId>
+    <artifactId>js_mail</artifactId>
+    <version>1.4</version>
+    <scope>system</scope>
+    <systemPath>C:\Users\ANDRESSA\Documents\ireport\iReport-4.0.1\ireport\modules\ext\js_mail-1.4.jar</systemPath>
+</dependency>
+
+<dependency>
+    <groupId>javax.xml.soap</groupId>
+    <artifactId>js_saaj-api</artifactId>
+    <version>1.3</version>
+    <scope>system</scope>
+    <systemPath>C:\Users\ANDRESSA\Documents\ireport\iReport-4.0.1\ireport\modules\ext\js_saaj-api-1.3.jar</systemPath>
+</dependency>
+
+<dependency>
+    <groupId>wsdl4j</groupId>
+    <artifactId>js_wsdl4j</artifactId>
+    <version>1.5.1</version>
+    <scope>system</scope>
+    <systemPath>C:\Users\ANDRESSA\Documents\ireport\iReport-4.0.1\ireport\modules\ext\js_wsdl4j-1.5.1.jar</systemPath>
+</dependency>
+
+<dependency>
+    <groupId>javax.transaction</groupId>
+    <artifactId>jta</artifactId>
+    <version>1.1</version>
+    <scope>system</scope>
+    <systemPath>C:\Users\ANDRESSA\Documents\ireport\iReport-4.0.1\ireport\modules\ext\jta.jar</systemPath>
+</dependency>
+
+<dependency>
+    <groupId>jxl</groupId>
+    <artifactId>jxl</artifactId>
+    <version>2.6.10</version>
+    <scope>system</scope>
+    <systemPath>C:\Users\ANDRESSA\Documents\ireport\iReport-4.0.1\ireport\modules\ext\jxl-2.6.10.jar</systemPath>
+</dependency>
+<dependency>
+    <groupId>log4j</groupId>
+    <artifactId>log4j</artifactId>
+    <version>1.2.15</version>
+    <scope>system</scope>
+    <systemPath>C:\Users\ANDRESSA\Documents\ireport\iReport-4.0.1\ireport\modules\ext\log4j-1.2.15.jar</systemPath>
+</dependency>
+
+<dependency>
+    <groupId>mondrian</groupId>
+    <artifactId>mondrian</artifactId>
+    <version>3.1.1.12687-Jaspersoft</version>
+    <scope>system</scope>
+    <systemPath>C:\Users\ANDRESSA\Documents\ireport\iReport-4.0.1\ireport\modules\ext\mondrian-3.1.1.12687-Jaspersoft.jar</systemPath>
+</dependency>
+
+<dependency>
+    <groupId>org.olap4j</groupId>
+    <artifactId>olap4j</artifactId>
+    <version>0.9.7.145</version>
+    <scope>system</scope>
+    <systemPath>C:\Users\ANDRESSA\Documents\ireport\iReport-4.0.1\ireport\modules\ext\olap4j-0.9.7.145.jar</systemPath>
+</dependency>
+
+<dependency>
+    <groupId>com.googlecode.png-encoder</groupId>
+    <artifactId>png-encoder</artifactId>
+    <version>1.5</version>
+    <scope>system</scope>
+    <systemPath>C:\Users\ANDRESSA\Documents\ireport\iReport-4.0.1\ireport\modules\ext\png-encoder-1.5.jar</systemPath>
+</dependency>
+
+<dependency>
+    <groupId>rex</groupId>
+    <artifactId>rex</artifactId>
+    <version>20080421</version>
+    <scope>system</scope>
+    <systemPath>C:\Users\ANDRESSA\Documents\ireport\iReport-4.0.1\ireport\modules\ext\rex-20080421.jar</systemPath>
+</dependency>
+
+<dependency>
+    <groupId>org.mozilla</groupId>
+    <artifactId>rhino</artifactId>
+    <version>1.7R1</version>
+    <scope>system</scope>
+    <systemPath>C:\Users\ANDRESSA\Documents\ireport\iReport-4.0.1\ireport\modules\ext\rhino-1.7R1.jar</systemPath>
+</dependency>
+
+<dependency>
+    <groupId>javax.xml.soap</groupId>
+    <artifactId>saaj-api</artifactId>
+    <version>1.3</version>
+    <scope>system</scope>
+    <systemPath>C:\Users\ANDRESSA\Documents\ireport\iReport-4.0.1\ireport\modules\ext\saaj-api-1.3.jar</systemPath>
+</dependency>
+
+<dependency>
+    <groupId>org.slf4j</groupId>
+    <artifactId>slf4j-api</artifactId>
+    <version>1.7.30</version> <!-- Use a versão mais recente ou adequada -->
+    <scope>system</scope>
+    <systemPath>C:\Users\ANDRESSA\Documents\ireport\iReport-4.0.1\ireport\modules\ext\slf4j-api.jar</systemPath>
+</dependency>
+
+<dependency>
+    <groupId>org.slf4j</groupId>
+    <artifactId>slf4j-log4j12</artifactId>
+    <version>1.7.30</version> <!-- Use a versão mais recente ou adequada -->
+    <scope>system</scope>
+    <systemPath>C:\Users\ANDRESSA\Documents\ireport\iReport-4.0.1\ireport\modules\ext\slf4j-log4j12.jar</systemPath>
+</dependency>
+
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-core</artifactId>
+    <version>4.3.25.RELEASE</version> <!-- Use a versão mais recente ou adequada -->
+    <scope>system</scope>
+    <systemPath>C:\Users\ANDRESSA\Documents\ireport\iReport-4.0.1\ireport\modules\ext\spring.jar</systemPath>
+</dependency>
+
+<dependency>
+    <groupId>org.sqleonardo</groupId>
+    <artifactId>sqleonardo</artifactId>
+    <version>2009.03.rc1</version>
+    <scope>system</scope>
+    <systemPath>C:\Users\ANDRESSA\Documents\ireport\iReport-4.0.1\ireport\modules\ext\sqleonardo-2009.03.rc1.jar</systemPath>
+</dependency>
+
+<dependency>
+    <groupId>org.swinglabs</groupId>
+    <artifactId>swingx</artifactId>
+    <version>0.9.3</version> <!-- Use a versão mais recente ou adequada -->
+    <scope>system</scope>
+    <systemPath>C:\Users\ANDRESSA\Documents\ireport\iReport-4.0.1\ireport\modules\ext\swingx-2007_10_07.jar</systemPath>
+</dependency>
+
+<dependency>
+    <groupId>xml-apis</groupId>
+    <artifactId>xml-apis</artifactId>
+    <version>1.4.01</version> <!-- Use a versão mais recente ou adequada -->
+    <scope>system</scope>
+    <systemPath>C:\Users\ANDRESSA\Documents\ireport\iReport-4.0.1\ireport\modules\ext\xml-apis.jar</systemPath>
+</dependency>
+
+<dependency>
+    <groupId>xml-apis</groupId>
+    <artifactId>xml-apis-ext</artifactId>
+    <version>1.3.04</version> <!-- Use a versão mais recente ou adequada -->
+    <scope>system</scope>
+    <systemPath>C:\Users\ANDRESSA\Documents\ireport\iReport-4.0.1\ireport\modules\ext\xml-apis-ext.jar</systemPath>
+</dependency>
+<!--
+<dependency>
+    <groupId>net.sf.jasperreports</groupId>
+    <artifactId>jasperreports</artifactId>
+    <version>5.6.0</version>
+    <scope>system</scope>
+    <systemPath>C:/Program Files (x86)/Jaspersoft/iReport-5.6.0/ireport/modules/ext/jasperreports-5.6.0.jar</systemPath>
+</dependency>
+-->
+
+<dependency>
+    <groupId>commons-logging</groupId>
+    <artifactId>commons-logging</artifactId>
+    <version>1.1</version>
+    <scope>system</scope>
+    <systemPath>C:\Program Files (x86)\Jaspersoft\iReport-5.6.0\ireport\modules\ext\commons-logging-1.1.jar</systemPath>
+</dependency>
+
+<dependency>
+    <groupId>com.lowagie</groupId>
+    <artifactId>iText</artifactId>
+    <version>2.1.7</version>
+    <scope>system</scope>
+    <systemPath>C:\Program Files (x86)\Jaspersoft\iReport-5.6.0\ireport\modules\ext\iText-2.1.7.js2.jar</systemPath>
+</dependency>
+
+<dependency>
+    <groupId>com.lowagie</groupId>
+    <artifactId>iTextAsian</artifactId>
+    <version>2.1.7</version>
+    <scope>system</scope>
+    <systemPath>C:\Program Files (x86)\Jaspersoft\iReport-5.6.0\ireport\modules\ext\iTextAsian.jar</systemPath>
+</dependency>
+
+<dependency>
+    <groupId>net.sf.jasperreports</groupId>
+    <artifactId>jasperreports</artifactId>
+    <version>5.6.0</version>
+    <scope>system</scope>
+    <systemPath>C:\Program Files (x86)\Jaspersoft\iReport-5.6.0\ireport\modules\ext\jasperreports-5.6.0.jar</systemPath>
+</dependency>
+
+<!-- Fim dos jasper -->
+<dependency>
+    <groupId>commons-beanutils</groupId>
+    <artifactId>commons-beanutils</artifactId>
+    <version>1.9.4</version>
+</dependency>
+
+<dependency>
+    <groupId>commons-collections</groupId>
+    <artifactId>commons-collections</artifactId>
+    <version>3.2.2</version>
+</dependency>
+
+<dependency>
+    <groupId>commons-digester</groupId>
+    <artifactId>commons-digester</artifactId>
+    <version>1.8.1</version>
+</dependency>
+
+<dependency>
+    <groupId>javax.servlet</groupId>
+    <artifactId>jstl</artifactId>
+    <version>1.2</version>
+</dependency>
+
+<dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi</artifactId>
+    <version>5.2.0</version>
+</dependency>
+
+<dependency>
+    <groupId>net.proteanit.sql</groupId>
+    <artifactId>rs2xml</artifactId>
+    <version>1.0</version>
+</dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>5.6.0</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-params</artifactId>
+            <version>5.6.0</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>5.6.0</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>br.com.caelum.stella</groupId>
+            <artifactId>hibernate-persistence-example</artifactId>
+            <version>2.1.6</version>
+            <type>jar</type>
+        </dependency>
+    </dependencies>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <exec.mainClass>com.mycompany.gerenciabanco.prjpets.PrjPets</exec.mainClass>
+    </properties>
+</project>
